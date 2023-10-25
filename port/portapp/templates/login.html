@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+<div class="container mt-5">
+    <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>LOGIN</h2>
+        <hr>
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input name="username" required type="text" class="form-control">
+        </div>
+
+        <br>
+
+         <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input name="password" required type="password" class="form-control">
+        </div>
+
+        <br>
+        <p>Don't have an account <a href="/signup">Create new account</a> </p>
+        <button type="submit" class="btn btn-sucess">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
